@@ -1,0 +1,184 @@
+header{
+    padding-top: 20px;
+    height: auto;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(126, 213, 111, 0.8), rgba(40,180, 131, 0.8)), url(../../assets/Manufacturing-Image-Background-1.jpg);;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+ }
+ 
+ .image-head {
+    margin-left: auto;
+    margin-right: auto;
+ }
+ 
+ h1 {
+    text-align: center;
+    font-family: 'Patua One', cursive;
+ }
+ 
+ .mat-top {
+    padding-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+ }
+ 
+ .mat-head {
+    margin-left: auto;
+    margin-right: auto;
+    height: 10rem;
+    width: 80%;
+    align-items: center;
+    background-color: lightseagreen; 
+    animation: pulse 3s
+ }
+ 
+ @keyframes pulse {
+    0% {
+       opacity: 0;
+    }
+    100% {
+       opacity: 100%;
+    }
+  }
+ 
+ .row-one {
+    display: inline-flex; 
+    width: 100%;
+ }
+ 
+ .row-two {
+    display: inline-flex;
+    width: 100%;
+    padding-top: 20px;
+ }
+ 
+ mat-card{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 18rem;
+    width: 20rem;
+    background-color: bisque;
+ }
+ 
+ p {
+    font-family: 'Bitter', serif;
+    padding-top: 5px;
+ }
+ 
+ .header-one{
+    text-align: center;
+    color: darkgoldenrod;
+    margin-top: 25px;
+ }
+ 
+ h3 {
+    text-align: left;
+    color: crimson;
+    padding-left: 5rem;
+    text-decoration: underline;
+ }
+ 
+ h5 {
+    text-align: center;
+    color: black;
+    font-family: 'Bitter', serif;
+    font-size: 1em;
+ }
+ 
+ .header-main {
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    color: white;
+ }
+ 
+ @keyframes fadeIn {
+    0% {
+        opacity: 0%;
+        
+    }
+ 
+    100% {
+        opacity: 100%; 
+    }
+ }
+ 
+ @keyframes moveInRight {
+    0% {
+        opacity: 0%;
+        transform: translateX(10rem);
+    }
+ 
+    80% {
+        transform: translateX(-1rem);
+    }
+ 
+    100% {
+        opacity: 100%;
+        transform: translate(0);    
+    }
+ }
+ 
+ .header-main-sub {
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    /* color: white; */
+    font-weight: 600;
+ }
+ 
+ @keyframes moveInLeft {
+    0% {
+        opacity: 0%;
+        transform: translateX(-10rem);  /* We can add for rotation "rotate(0deg)"*/
+    }
+ 
+    80% {
+        transform: translateX(1rem);
+    }
+ 
+    100% {
+        opacity: 100%;
+        transform: translate(0);    
+    }
+ }
+ 
+ 
+ .header-main-sub-right {
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    /* color: white; */
+    font-weight: 600;
+ }
+ 
+ .header-main-sub-right-top {
+    color: white;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+ }
+ 
+ .accordian {
+    padding: 12rem;
+    margin-left: 10rem;
+ }
+ 
+ .expanson-panel-right {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+ }
+ 
+ .expanson-panel-left {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+ }
+ 

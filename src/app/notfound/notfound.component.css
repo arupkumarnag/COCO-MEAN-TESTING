@@ -1,0 +1,14 @@
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    height: auto;
+}
+
+.error {
+    width: 60%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+}

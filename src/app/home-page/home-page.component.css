@@ -1,0 +1,341 @@
+header {
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    background-image: linear-gradient(to right, rgba(126, 213, 111, 0.8), rgba(40,180, 131, 0.8)), url(../../assets/Manufacturing-Image-Background-1.jpg);;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+#logo-master {
+    display: inline-flex;
+    animation: pulse 3s
+  }
+  
+  @keyframes pulse {
+    0% {
+       opacity: 0;
+    }
+    100% {
+       opacity: 100%;
+    }
+  }
+  
+.logo-main {
+  padding-top: 30px;
+  padding-left: 50px;
+  height: 150px;
+  width: 150px;
+}
+
+.jit-master {
+  padding-top: 30px;
+  padding-left: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.jitpoly {
+  font-family: 'Baloo Bhai', cursive; 
+  font-size: 6em;
+  font-weight: 300;
+  color: rgb(245, 176, 49);
+}
+
+.timber {
+    position: relative;
+    text-align: center;
+    font-weight: bolder;
+    color: #f1f1f1;
+    font-size: 3.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation-iteration-count: 1;
+    animation-duration: 1.5s;
+    animation-name: slidein;   
+} 
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%; 
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.container {
+    padding-left: 200px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+  background-color: #4CAF50;
+  color:black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.explore-image:hover .image {
+  opacity: 0.3;
+}
+
+.explore-image:hover .text {
+  opacity: 1;
+}
+
+.products-one {   
+    display: inline-flex;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation: pulse 3s;
+}
+
+.explore-container {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.image {
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.65em;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.explore-image {
+  display: inline-block;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  
+}
+
+.explore {
+  padding-top: none;
+  text-align: center;
+  font-family: 'Cabin', sans-serif;
+  color: darkslateblue;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.explore-image {
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+
+.explore-container-one {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.explore-image-one {
+  display: inline-block;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+}
+
+.explore-container-two {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.explore-image-two {
+  display: inline-block;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+}
+
+
+/* ========================TESTING============================== */
+
+.container-main {
+  display: inline-flex;
+  padding-left: 190px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.containerone {
+  padding: 10px;
+  position: relative;
+  width: 50%;
+}
+
+.imageone {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlayone {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 250px;
+  width: 360px;
+  opacity: 0;
+  transition: .2s ease;
+  background-color: lightcyan;
+}
+
+.containerone:hover .overlayone {
+  opacity: 0.5;
+}
+
+.textone {
+  color:black;
+  font-size: 2em;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/* ========Long Image========================== */
+
+.container-main-long {
+  padding-top: 10px;
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 200px;
+}
+
+.containertwo {
+  position: relative;
+  width: 50%;
+}
+
+.imagetwo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlaytwo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 250px;
+  width: 1120px;
+  opacity: 0;
+  transition: .2s ease;
+  background-color: lightcyan;
+
+}
+
+.containertwo:hover .overlaytwo {
+  opacity: 0.5;
+}
+
+.texttwo {
+  color:black;
+  font-size: 2em;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/* =======================Big Two Images===================================================== */
+
+.container-main-big{
+  padding-top: 10px;
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 190px;
+}
+
+.containerbig {
+  position: relative;
+  width: 80%;
+  padding: 15px;
+}
+
+.imagebig {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlaybig {
+  margin-left: 15px;
+  margin-top: 15px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 450px;
+  width: 545px;
+  opacity: 0;
+  transition: .2s ease;
+  background-color: lightcyan;
+
+}
+
+.containerbig:hover .overlaybig {
+  opacity: 0.5;
+}
+
+.textbig {
+  color:black;
+  font-size: 2em;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

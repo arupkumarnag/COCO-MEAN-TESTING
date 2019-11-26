@@ -1,0 +1,102 @@
+<header>
+
+<h1>Fill in your details and we will get back to you !</h1>
+
+<div class="container">
+
+<mat-card class="contact-us">
+    <mat-card-title>
+        <h2>Contact Us</h2>
+        <h3>
+            Head Office:
+        </h3>
+        <p>3902, T.C.I Road, P.O: Narayanpur,
+        District: North 24 Parganas, PIN/ZIP: 743126.
+        West Bengal, India.</p>
+
+        <p>For General Enquiries: enquiry@jitpoly.tk</p>
+        <section>
+            <h3>Dial Us:</h3>
+            <p>+91 - 9830718893 / +91 - 9143533220.</p>
+        </section>
+    </mat-card-title>
+</mat-card>
+
+<mat-card>
+    <h2 class="write-form">Write to Us:</h2>
+
+    <form class="example-form" (submit)="onAddPost(postForm)" #postForm="ngForm">
+        <mat-form-field class="example-full-width">
+            <input 
+            matInput 
+            placeholder="Enter your name" 
+            type="text"
+            name="name"
+            ngModel
+            required
+            minlength="3"
+            #name="ngModel">
+            <mat-error *ngIf="name.invalid">Please enter your name</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <span matPrefix>+91 &nbsp;</span>
+        <input  
+        matInput 
+        placeholder="Telephone"
+        type="number"
+        name="telephone"
+        ngModel
+        required
+        minlength="8"
+        #telephone="ngModel">
+        <mat-error *ngIf="telephone.invalid">Please enter your phone number</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <input 
+        matInput 
+        placeholder="Email" 
+        type="text"
+        name="email"
+        ngModel
+        required
+        minlength="8"
+        #email="ngModel">
+        <mat-error *ngIf="email.invalid">Please enter your email</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <textarea 
+        matInput 
+        placeholder="Your Message"
+        type="text"
+        name="content"
+        ngModel
+        required
+        minlength="6"
+        #content="ngModel">
+    </textarea>
+    <mat-error *ngIf="content.invalid">Please enter your message</mat-error>
+    </mat-form-field>
+    <button 
+    color="accent" 
+    class="btn" 
+    mat-raised-button 
+    type="submit">Submit</button>
+    </form>
+</mat-card>
+</div>
+
+</header>
+
+
+
+
+
+
+
+
+
+
+

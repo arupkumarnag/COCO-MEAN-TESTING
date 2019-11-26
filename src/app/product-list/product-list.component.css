@@ -1,0 +1,105 @@
+header {
+height: 65rem;
+margin-left: auto;
+margin-right: auto;
+background-image: linear-gradient(to right, rgba(126, 213, 111, 0.8), rgba(40,180, 131, 0.8)), url(../../assets/Manufacturing-Image-Background-1.jpg);;
+background-size: cover;
+background-position: top;
+position: relative;
+} 
+
+.mat-product {
+padding-top: 25px;
+}
+
+.product-words {
+background-color: lightgray;
+width: 52%;
+margin-left: auto;
+margin-right: auto;
+animation: pulse 1.5s;
+}
+
+@keyframes pulse {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 100%;
+}
+}
+
+.container {
+max-width: 63%;
+margin-right: auto;
+margin-left: auto;
+padding-left: 130px;
+}
+
+.products-one {   
+display: inline-flex;
+padding: 15px;
+margin-left: auto;
+margin-right: auto;
+animation-iteration-count: 1;
+animation-duration: 2s;
+animation-name: moveInRight; 
+}
+
+.image {
+max-height: 350px;
+max-width: 180px; 
+text-align: center;
+font-family: 'Prompt', sans-serif;
+font-size: 1.25em;
+font-weight: 700;
+margin-left: auto;
+margin-right: auto;
+}
+
+.products-two {   
+margin-right: auto;
+margin-left: auto;
+display: inline-flex;
+padding: 15px;
+padding-top: 50px;
+animation-iteration-count: 1;
+animation-duration: 2s;
+animation-name: moveInLeft; 
+}
+
+mat-card-title {
+text-align: center;
+}
+
+@keyframes moveInRight {
+0% {
+    opacity: 0%;
+    transform: translateX(10rem);
+}
+
+80% {
+    transform: translateX(-1rem);
+}
+
+100% {
+    opacity: 100%;
+    transform: translate(0);    
+}
+}
+
+@keyframes moveInLeft {
+0% {
+    opacity: 0%;
+    transform: translateX(-10rem);  /* We can add for rotation "rotate(0deg)"*/
+}
+
+80% {
+    transform: translateX(1rem);
+}
+
+100% {
+    opacity: 100%;
+    transform: translate(0);    
+}
+}
